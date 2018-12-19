@@ -26,10 +26,10 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="all_course.html">Course</a>
+            <a class="nav-link" href="all_course.php">Course</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -87,43 +87,43 @@
     <section class="featured-course py-3">
       <div class="container">
         <div class="wrap-title">
-        <h2 class="title py-5">Featured Course</h2>
+        <h2 class="title py-5">Random Course</h2>
           
         </div>
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 mb-5">
-            <div class="card">
-              <img class="card-img-top" src="images/course/app1.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">View detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-5">
-            <div class="card">
-              <img class="card-img-top" src="images/course/app2.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">View detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 mb-5">
-            <div class="card">
-              <img class="card-img-top" src="images/course/app1.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-success">View detail</a>
-              </div>
-            </div>
-          </div>
           
+        <?php 
+          require 'connect.php';
+          mysqli_query($conn, 'set names UTF8');
+          $sql = "SELECT * FROM `course` LIMIT 3";
+
+          $result = mysqli_query($conn, $sql);
+        
+          if (mysqli_num_rows($result) > 0) {
+            
+            while($row = mysqli_fetch_assoc($result)) {
+
+                $title = $row["title"];
+                $image = $row["image"];
+                $date  = $row["date_upload"];
+                $link  = $row["link"];
+
+                echo '<div class="col-12 col-md-6 col-lg-4 mb-5">';
+                echo '<div class="card">';
+                echo '<img class="card-img-top" src="'.$image.'" alt="Card image cap">';
+                echo '<div class="card-body">';
+                echo '<h5 class="card-title">'.$title.'</h5>';
+                echo '<p class="card-text">Date upload : '.$date.'</p>';
+                echo '<a href="'.$link.'" class="btn btn-success">View detail</a>';
+                echo '</div>
+                </div>
+              </div>';
+            }
+        } else {
+            echo "0 results";
+        }
+        mysqli_close($conn);
+        ?>
 
         </div>
         <a href="all_course.html" class="btn btn-outline-success my-3">All Course</a>
@@ -179,44 +179,6 @@
     </section>
 
 
-<!-- ======================== Footer ======================== -->
-
-    <footer class="footer my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <a class="navbar-brand mt-5" href="#">LMS Page</a>
-            <p>Hệ thống quản lý khóa học</p>
-            <div class="footer-icon">
-              <a target="blank" href="https://fb.com/Minhvn98"><i class="fab fa-facebook"></i></a>
-            <a target="blank" href="https://github.com/Minhvn98"><i class="fab fa-github"></i></a>
-              <a target="blank" href="https://fb.com/mik.nguyen.102"><i class="fab fa-facebook"></i></a>
-            </div>
-          </div>
-
-          <div class="col-md-5">
-            <h3 class="footer-title mt-5">References</h3>
-            <ul>
-              <li class="mb-2"><a href="https://getbootstrap.com/docs/4.1">Bootstrap 4</a></li>
-              <li class="mb-2"><a href="https://w3school.com">W3school</a></li> 
-              <li class="mb-2"><a href="https://github.com/Minhvn98/LMS_Project">Source Code</a></li>          
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <h3 class="footer-title mt-5">Contact</h3>
-            <p>Add : 175, Tây Sơn, Đống Đa, Hà Nội</p>
-            <p>SĐT : 0969 969 969</p>
-            <p>Email : lmspage123@tlu.vn</p>
-          </div>
-        </div>
-      </div>
-    
-    </footer>
-    <i class="fas fa-chevron-up back-to-top"></i>
-    <script src="./js/jquery-3.3.1.slim.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
-</html>
+<?php 
+  require 'footer.php';
+ ?>

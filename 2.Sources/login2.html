@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -14,21 +13,16 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xs-5 form  shadow">
-          <form>
+          <form method="post" action="check_login.php">
             <div class="logo">
               <h3 class="text-center mb-5">LOGIN</h3>
-            </div>
-           
-            
-            <div class="form-group">
-              
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Nhập email">
-              
+            </div>  
+            <div class="form-group">              
+              <input type="text" class="form-control" name="admin_name" placeholder="Nhập Admin name">              
             </div>
             <hr>
-            <div class="form-group">
-              
-              <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+            <div class="form-group">    
+              <input type="password" class="form-control" name="password" placeholder="Nhập mật khẩu">
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -36,16 +30,13 @@
             </div>
             <hr>
             <button type="submit" class="btn btn-block mb-4">Đăng nhập</button>
-            <p class="text-muted mb-0 text-center" style="font-size: 13px">Bạn chưa có tài khoản ?</p>
-            <a href="register.html">Đăng ký ngay</a>
+            <p class="text-muted mb-0 text-center " style="font-size: 13px">Tài khoản mật khẩu không chính xác</p>          
           </form>
         </div>
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+
     <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
