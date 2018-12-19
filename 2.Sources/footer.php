@@ -8,8 +8,8 @@
             <p>Hệ thống quản lý khóa học</p>
             <div class="footer-icon">
               <a target="blank" href="https://fb.com/Minhvn98"><i class="fab fa-facebook"></i></a>
-            <a target="blank" href="https://github.com/Minhvn98"><i class="fab fa-github"></i></a>
-              <a target="blank" href="https://fb.com/mik.nguyen.102"><i class="fab fa-facebook"></i></a>
+              <a target="blank" href="https://github.com/Minhvn98"><i class="fab fa-github"></i></a>
+
             </div>
             
           </div>
