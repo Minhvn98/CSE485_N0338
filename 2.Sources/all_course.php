@@ -13,38 +13,8 @@
     <title>Tất cả khóa học</title>
   </head>
   <body>
+  <?php require 'header.php' ?>
 
-
-<!---------------------- Header ------------------>
-
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-    <div class="container menu-top">
-      <a class="navbar-brand" href="index.html">LMS Page</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="all_course.html">Course</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-        </ul>
-        
-      </div>
-    </div>
-    </nav>
-
-    
 <!---------------------- Course ------------------>
 
 <section class="courses my-5">
@@ -65,8 +35,8 @@
 
             $title = $row["title"];
             $image = $row["image"];
-            $date = $row["date_upload"];
-            $link = $row["link"];
+            $date  = $row["date_upload"];
+            $link  = $row["link"];
 
             echo '<div class="col-12 col-md-6 col-lg-4 mb-5">';
             echo '<div class="card">';

@@ -13,39 +13,9 @@
     <title>Learning Management System</title>
   </head>
   <body>
+  <?php require 'header.php' ?>
 
-    <!--====================== nvarbar =================================-->
-
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-    <div class="container menu-top">
-      <a class="navbar-brand" href="#">LMS Page</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="all_course.php">Course</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-        </ul>
-        
-      </div>
-    </div>
-    </nav>
-    
-
-
-    <!--======================== carousel ==================================-->
+    <!------------------ carousel ----------------->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -102,19 +72,13 @@
           if (mysqli_num_rows($result) > 0) {
             
             while($row = mysqli_fetch_assoc($result)) {
-
-                $title = $row["title"];
-                $image = $row["image"];
-                $date  = $row["date_upload"];
-                $link  = $row["link"];
-
                 echo '<div class="col-12 col-md-6 col-lg-4 mb-5">';
                 echo '<div class="card">';
-                echo '<img class="card-img-top" src="'.$image.'" alt="Card image cap">';
+                echo '<img class="card-img-top" src="'. $row['image'] .'" alt="Card image cap">';
                 echo '<div class="card-body">';
-                echo '<h5 class="card-title">'.$title.'</h5>';
-                echo '<p class="card-text">Date upload : '.$date.'</p>';
-                echo '<a href="'.$link.'" class="btn btn-success">View detail</a>';
+                echo '<h5 class="card-title">' . $row["title"] . '</h5>';
+                echo '<p class="card-text">Date upload : '. $row["date_upload"] .'</p>';
+                echo '<a href="'. $row['link'] .'" class="btn btn-success">View detail</a>';
                 echo '</div>
                 </div>
               </div>';
@@ -130,7 +94,7 @@
     </section>
 
     
-    <!--============================= Contact Us ==========================-->
+    <!--------------------- Contact Us -------------------->
 
     <section class="contact my-4">
       <div class="container">
@@ -179,6 +143,4 @@
     </section>
 
 
-<?php 
-  require 'footer.php';
- ?>
+<?php require 'footer.php';?>
