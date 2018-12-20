@@ -39,7 +39,12 @@
             echo '<div class="card-body">';
             echo '<h5 class="card-title">'. $row["title"] .'</h5>';
             echo '<p class="card-text">Date upload : ' . $row["date_upload"] . '</p>';
-            echo '<a href="' . $row["link"] . '/'.$row["id_course"].'" class="btn btn-success">View detail</a>';
+            // echo '<a href="' . $row["link"] . '/'.$row["id_course"].'" class="btn btn-success">View detail</a>';
+            echo '<div class="btn-group" role="group" aria-label="Basic example">';
+            echo '<a href="' . $row["link"] . '/'.$row["id_course"].'" class="btn btn-warning">View</a>';
+            echo '<a href="edit.php" class="btn btn-primary">Edit <i class="fas fa-pencil-alt"></i></a>';
+            echo '<a href="delete.php" class="btn btn-danger">Delete<i class="fas fa-trash"></i></a>';
+            echo '</div>';
             echo '</div>
             </div>
           </div>';

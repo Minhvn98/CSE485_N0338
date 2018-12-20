@@ -7,16 +7,28 @@
 
     <!-- Link file CSS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800&amp;subset=vietnamese" rel="stylesheet">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/detail_course.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/detail_course.css">
     <title>khóa học</title>
   </head>
   <body>
   <?php require 'header.php' ?>
+  <?php require 'connect.php' ?>
+  <?php 
+    $id = $_SERVER['REQUEST_URI'];
+    $id = explode('/', $id);
+    $id = end($id);
+    $sql = "SELECT title FROM `course` WHERE id_course = $id";
+    
+    $title = mysqli_query($conn, $sql);
+    $title = mysqli_fetch_assoc($title);
+    
 
+
+  ?>
   <div class="container mt-5 content">
-    <h3 class="text-center mt-5">Mạng máy tính</h3>
+    <h3 class="text-center pt-5"><?php echo $title['title'] ?></h3>
     <section>
       <h4 class="title">Bài Giảng</h4>
     <table class="table table-hover table-striped">
@@ -30,8 +42,8 @@
       </thead>
       <tbody>
         <?php 
-        require 'connect.php';
-        $sql = "SELECT * FROM `lesson` WHERE id_course = 1";
+  
+        $sql = "SELECT * FROM `lesson` WHERE id_course = $id";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
@@ -48,7 +60,6 @@
           } else {
               echo "0 results";
           }
-          mysqli_close($conn);
          ?> 
         
       </tbody>
@@ -69,8 +80,7 @@
       </thead>
       <tbody>
         <?php 
-        require 'connect.php';
-        $sql = "SELECT * FROM `code_example` WHERE id_course = 1";
+        $sql = "SELECT * FROM `code_example` WHERE id_course = $id";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
@@ -87,7 +97,6 @@
           } else {
               echo "0 results";
           }
-          mysqli_close($conn);
          ?> 
       </tbody>
     </table>
@@ -107,8 +116,8 @@
       </thead>
       <tbody>
         <?php 
-        require 'connect.php';
-        $sql = "SELECT * FROM `documents` WHERE id_course = 1";
+        $sql = "SELECT * FROM `documents` WHERE id_course = $id";
+
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
@@ -125,18 +134,12 @@
           } else {
               echo "0 results";
           }
-          mysqli_close($conn);
          ?> 
       </tbody>
     </table>
     </section>
     <hr>
 
-
-
   </div>
-
-
-
-
+<?php mysqli_close($conn); ?>
 <?php require 'footer.php'?>

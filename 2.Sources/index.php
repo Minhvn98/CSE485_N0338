@@ -52,7 +52,7 @@
     </div>
 
 
-    <!--============================= Featured Courses ==========================-->
+    <!-------------- Featured Courses ----------------->
     
     <section class="featured-course py-3">
       <div class="container">
@@ -74,11 +74,12 @@
             while($row = mysqli_fetch_assoc($result)) {
                 echo '<div class="col-12 col-md-6 col-lg-4 mb-5">';
                 echo '<div class="card">';
-                echo '<img class="card-img-top" src="'. $row['image'] .'" alt="Card image cap">';
+                echo '<img class="card-img-top" src="' . $row["image"] . '" alt="Card image cap">';
                 echo '<div class="card-body">';
-                echo '<h5 class="card-title">' . $row["title"] . '</h5>';
-                echo '<p class="card-text">Date upload : '. $row["date_upload"] .'</p>';
-                echo '<a href="'. $row['link'] .'" class="btn btn-success">View detail</a>';
+                echo '<h5 class="card-title">'. $row["title"] .'</h5>';
+                echo '<p class="card-text">Date upload : ' . $row["date_upload"] . '</p>';
+                echo '<a href="' . $row["link"] . '/'.$row["id_course"].'" class="btn btn-success">View detail
+                </a>';
                 echo '</div>
                 </div>
               </div>';

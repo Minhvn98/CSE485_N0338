@@ -1,4 +1,4 @@
-CREATE DATABASE lms_project CHARACTER SET utf8 COLLATE utf8_general_ci;
+﻿CREATE DATABASE lms_project CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 /*------------- Create table -------------------*/
 
@@ -71,99 +71,99 @@ INSERT INTO `course` (`id_course`, `title`, `image`, `date_upload`, `link`) VALU
 /*----------------- Insert code_example ----------------*/
 
 INSERT INTO `code_example` (`id_course`, `title_code_example`, `date_upload`, `link_dowload`) VALUES 
-    ('1', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('1', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('1', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('1', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('1', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('1', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
     INSERT INTO `code_example` (`id_course`, `title_code_example`, `date_upload`, `link_dowload`) VALUES 
-    ('2', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('2', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('2', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('2', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('2', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('2', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
 
     INSERT INTO `code_example` (`id_course`, `title_code_example`, `date_upload`, `link_dowload`) VALUES 
-    ('3', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('3', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('3', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('3', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('3', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('3', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
     INSERT INTO `code_example` (`id_course`, `title_code_example`, `date_upload`, `link_dowload`) VALUES 
-    ('4', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('4', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('4', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('4', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('4', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('4', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
 /*----------------- Insert documents ----------------*/
 
 INSERT INTO `documents` (`id_course`, `title_documents`, `date_upload`, `link_dowload`) VALUES 
-    ('1', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('1', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('1', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('1', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('1', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('1', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
     INSERT INTO `documents` (`id_course`, `title_documents`, `date_upload`, `link_dowload`) VALUES 
-    ('2', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('2', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('2', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('2', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('2', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('2', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
     INSERT INTO `documents` (`id_course`, `title_documents`, `date_upload`, `link_dowload`) VALUES 
-    ('3', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('3', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('3', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('3', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('3', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('3', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
     INSERT INTO `documents` (`id_course`, `title_documents`, `date_upload`, `link_dowload`) VALUES 
-    ('4', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('4', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('4', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('4', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('4', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('4', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
 /*----------------- Insert lesson ----------------*/
 
 INSERT INTO `lesson` (`id_course`, `title_lesson`, `date_upload`, `link_dowload`) VALUES 
-    ('1', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('1', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('1', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('1', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('1', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('1', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('1', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
     INSERT INTO `lesson` (`id_course`, `title_lesson`, `date_upload`, `link_dowload`) VALUES 
-    ('2', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('2', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('2', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('2', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('2', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('2', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('2', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
     INSERT INTO `lesson` (`id_course`, `title_lesson`, `date_upload`, `link_dowload`) VALUES 
-    ('3', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('3', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('3', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('3', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('3', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('3', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('3', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
     INSERT INTO `lesson` (`id_course`, `title_lesson`, `date_upload`, `link_dowload`) VALUES 
-    ('4', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'), 
-    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16'),
-    ('4', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=18'), 
-    ('4', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'http://www.hoccongnghethongtin.com/mod/resource/view.php?id=16');
+    ('4', 'Slide 01 - Install PHP XAMPP LAMP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('4', 'Slide 02 - PHP Syntax File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'),
+    ('4', 'Slide 03 - Working with FORM in PHP File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz'), 
+    ('4', 'Slide 04 - Regular Expressions File', CURRENT_TIMESTAMP, 'https://drive.google.com/drive/folders/10dRZv7DfdMkkcbi_l3-bJcIYTXiJJtsz');
 
 
