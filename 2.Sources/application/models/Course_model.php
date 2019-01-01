@@ -13,7 +13,7 @@ class Course_model extends CI_Model {
     {
         $this->db->select('*');
         $this->db->order_by('date_upload', 'asc');
-        $query = $this->db->get('course', 3);
+        $query  = $this->db->get('course', 3);
         $result = $query->result_array();
         $result = array("data_course" => $result);
         return $result;
@@ -23,7 +23,7 @@ class Course_model extends CI_Model {
     {
         $this->db->select('*');
         $this->db->order_by('date_upload', 'asc');
-        $query = $this->db->get('course');
+        $query  = $this->db->get('course');
         $result = $query->result_array();
         $result = array("data_course" => $result);
         return $result;
@@ -36,6 +36,7 @@ class Course_model extends CI_Model {
         $query = $this->db->get('course');
         return $query->result_array();
     }
+
     public function get_lesson($id)
     {
         $this->db->select('*');
@@ -66,6 +67,11 @@ class Course_model extends CI_Model {
         $result = $query->result_array();
         $result = array("data_documents" => $result);
         return $result;
+        
+    }
+
+    public function insert_course()
+    {
         
     }
 

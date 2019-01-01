@@ -14,11 +14,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		});
 	});
-	$('.btn-add-course').click(function(event) {
-        $('.contain-add-course').addClass('show');
-        console.log("hihi");
-      });
-	$('.btn-exit').click(function(event) {
-		$('.contain-add-course').removeClass('show');
-	});
+	
   });

@@ -27,7 +27,7 @@
         <?php 
           $date = strtotime($value['date_upload']); 
           $date = date('H:i d/m/Y', $date);
-          ?>
+        ?>
         <div class="col-12 col-md-6 col-lg-4 mb-5">
             <div class="card">
               <img class="card-img-top" src="<?= $value['image'] ?>" alt="Card image cap">

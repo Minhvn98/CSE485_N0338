@@ -88,14 +88,15 @@
           ?>
         <div class="col-12 col-md-6 col-lg-4 mb-5">
             <div class="card">
-              <input type="hidden" value="<?= $value['id_course'] ?>">
               <img class="card-img-top" src="<?= $value['image'] ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"><?= $value['title'] ?></h5>
                 <p class="card-text text-muted"><?= $date ?></p>
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <a href="<?= BASE_URL() ?>Main_controller/show_detailt_course/<?= $value['id_course'] ?>" class="btn btn-warning">View detail</a>
-                  <button type="button" class="btn btn-primary btn-edit" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Edit <i class="fas fa-pencil-alt"></i></button>
+
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit<?= $value['id_course'] ?>" data-whatever="@mdo">Edit <i class="fas fa-pencil-alt"></i></button>
+
                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_course'] ?>">
                   Delete <i class="fas fa-trash"></i>
                 </button>
@@ -125,44 +126,45 @@
               </div>
             </div> <!-- end delete course -->
 
-          </div>
-        <?php endforeach ?> 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="edit<?= $value['id_course'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Sửa Khóa Học</h5>
+                <h5 class="modal-title">Sửa khóa học</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <form method="post" class="form-edit" action="<?= base_url() ?>Main_controller/update_course" enctype="multipart/form-data">
-                  <input type="hidden" name="id-edit" class="id-edit" value="">
-                  <input type="hidden" name="image-course" class="image-course2" value="">
+                <form class="form-edit" method="post" action="<?= base_url() ?>Main_controller/update_course" enctype="multipart/form-data">
                   <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Tên khóa học : </label>
-                    <input type="text" name="title-edit" class="form-control title-edit" id="recipient-name">
+                    <input type="text" class="form-control" name="title_edit" value="<?= $value['title'] ?>">
+                    <input type="text" name="id_edit<?= $value['id_course'] ?>" value="<?= $value['id_course'] ?>">
+                    <input type="hidden" name="image_no_edit" value="<?= $value['image'] ?>">
                   </div>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Ảnh khóa học : </label>
-                    <img class="img-fluid image-course1" src="" alt="Ảnh edit">
+                    <label for="message-text" class="col-form-label">Ảnh khóa học cũ :</label>
+                    <img class="img-fluid" src="<?= $value['image'] ?>" alt="ảnh khóa học">
                   </div>
                   <div class="form-group">
                     <label for="message-text" class="col-form-label">Ảnh khóa học :</label>
-                  <input type="file" name="image-edit" class="form-control-file image-edit" name="image">
-                    
+                    <input type="file" class="form-control-file image-course" name="image_edit">
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary btn-save">Lưu</button>
+                <button type="submit" class="btn btn-primary button-save">Lưu</button>
               </div>
             </div>
           </div>
         </div>
+
+          </div>
+        <?php endforeach ?>
+
     </div><!--  end row -->
       
     
