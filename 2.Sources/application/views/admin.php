@@ -19,7 +19,7 @@
 
 <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
 <div class="container menu-top">
-  <a class="navbar-brand" href="http://localhost/LMS_Project/2.Sources/index.php">LMS Page</a>
+  <a class="navbar-brand" href="<?= base_url() ?>Home">LMS Page</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,16 +27,16 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url() ?>index.php">Home</a>
+        <a class="nav-link" href="<?= base_url() ?>Home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?= base_url() ?>Main_controller/show_all_course">Course</a>
+        <a class="nav-link" href="<?= base_url() ?>Admin">Course</a>
       </li>
       <li class="nav-item">
         <a class="nav-link add-course" href="#">Add</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?= base_url() ?>Main_controller/login">Login</a>
+        <a class="nav-link" href="<?= base_url() ?>Home">Logout</a>
       </li>
     </ul>
     
@@ -47,7 +47,7 @@
     <!-- form add course -->
 
   <div class="contain-add-course">  
-    <form class="shadow form-add-course" method="post" action="<?= base_url() ?>Main_controller/add_course" enctype="multipart/form-data">
+    <form class="shadow form-add-course" method="post" action="<?= base_url() ?>Admin/add_course" enctype="multipart/form-data">
       <i class="fas fa-times btn-exit"></i>
 
       <div class="form-title">
@@ -94,7 +94,7 @@
                 <h5 class="card-title"><?= $value['title'] ?></h5>
                 <p class="card-text text-muted"><?= $date ?></p>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <a href="<?= BASE_URL() ?>Main_controller/show_detailt_course/<?= $value['id_course'] ?>" class="btn btn-warning">View detail</a>
+                  <a href="<?= BASE_URL() ?>Admin/ad_detailt_course/<?= $value['id_course'] ?>" class="btn btn-warning">View detail</a>
                   <button type="button" class="btn btn-primary btn-edit" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Edit <i class="fas fa-pencil-alt"></i></button>
                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_course'] ?>">
                   Delete <i class="fas fa-trash"></i>
@@ -104,7 +104,7 @@
 
             </div>
 
-            <!-- Modal -->
+            
             <div class="modal fade" id="delete<?= $value['id_course'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -119,7 +119,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a href="<?= BASE_URL() ?>Main_controller/delete_course/<?= $value['id_course'] ?>" class="btn btn-danger">Delete <i class="fas fa-delete"></i></a> 
+                    <a href="<?= BASE_URL() ?>Admin/delete_course/<?= $value['id_course'] ?>" class="btn btn-danger">Delete <i class="fas fa-delete"></i></a> 
                   </div>
                 </div>
               </div>
@@ -128,6 +128,7 @@
           </div>
         <?php endforeach ?> 
 
+          <!-- form edit course -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -138,7 +139,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form method="post" class="form-edit" action="<?= base_url() ?>Main_controller/update_course" enctype="multipart/form-data">
+                <form method="post" class="form-edit" action="<?= base_url() ?>Admin/update_course" enctype="multipart/form-data">
                   <input type="hidden" name="id-edit" class="id-edit" value="">
                   <input type="hidden" name="image-course" class="image-course2" value="">
                   <div class="form-group">
@@ -163,6 +164,8 @@
             </div>
           </div>
         </div>
+
+
     </div><!--  end row -->
       
     

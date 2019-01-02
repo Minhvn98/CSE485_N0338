@@ -34,7 +34,7 @@
               <div class="card-body">
                 <h5 class="card-title"><?= $value['title'] ?></h5>
                 <p class="card-text text-muted"><?= $date ?></p>
-                <a href="<?= BASE_URL() ?>Main_controller/show_detailt_course/<?= $value['id_course'] ?>" class="btn btn-success">View detail</a>
+                <a href="<?= BASE_URL() ?>Home/detailt_course/<?= $value['id_course'] ?>" class="btn btn-success">View detail</a>
               </div>
             </div>
           </div>

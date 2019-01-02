@@ -19,7 +19,7 @@
             <ul>
               <li class="mb-2"><a href="https://getbootstrap.com/docs/4.1">Bootstrap 4</a></li>
               <li class="mb-2"><a href="https://w3school.com">W3school</a></li> 
-              <li class="mb-2"><a href="https://github.com/Minhvn98/LMS_Project">Source Code</a></li>          
+              <li class="mb-2"><a href="https://codeigniter.com/user_guide/">CodeIgniter</a></li>          
             </ul>
           </div>
 

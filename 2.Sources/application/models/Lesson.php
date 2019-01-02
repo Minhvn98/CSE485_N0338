@@ -24,6 +24,7 @@ class Lesson extends CI_Model {
     public function get($where = NULL) {
         $this->db->select('*');
         $this->db->from(self::TABLE_NAME);
+        $this->db->order_by('date_upload', 'ASC');
         if ($where !== NULL) {
             if (is_array($where)) {
                 foreach ($where as $field=>$value) {
@@ -38,6 +39,15 @@ class Lesson extends CI_Model {
         return $result;
     }
 
+
+    public function get_id_course($id)
+    {
+        $this->db->select('id_course');
+        $this->db->from(self::TABLE_NAME);
+        $this->db->where(self::PRI_INDEX, $id);
+        $result = $this->db->get()->result_array();
+        return $result;
+    }
     /**
      * Inserts new data into database
      *
@@ -74,7 +84,7 @@ class Lesson extends CI_Model {
      * @return int Number of rows affected by the delete query
      */
     public function delete($where = array()) {
-        if (!is_array()) {
+        if (!is_array($where)) {
             $where = array(self::PRI_INDEX => $where);
         }
         $this->db->delete(self::TABLE_NAME, $where);

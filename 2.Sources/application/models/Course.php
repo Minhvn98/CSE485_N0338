@@ -46,7 +46,7 @@
 
 	    public function get_title_course($id)
 	    {
-	        $this->db->select('title');
+	        $this->db->select('id_course, title');
 	        $this->db->where('id_course', $id);
 	        $query = $this->db->get('course');
 	        return $query->result_array();
@@ -95,8 +95,5 @@
           $this->db->delete(self::TABLE_NAME, $where);
           return $this->db->affected_rows();
       }
-	}
-	        
-
+	}	        
  ?>
- 
