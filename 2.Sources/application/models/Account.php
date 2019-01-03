@@ -52,9 +52,9 @@ class Account extends CI_Model {
      * @return int Number of affected rows by the update query
      */
     public function update(Array $data, $where = array()) {
-            if (!is_array($where)) {
-                $where = array(self::PRI_INDEX => $where);
-            }
+        if (!is_array($where)) {
+            $where = array(self::PRI_INDEX => $where);
+        }
         $this->db->update(self::TABLE_NAME, $data, $where);
         return $this->db->affected_rows();
     }
@@ -73,5 +73,5 @@ class Account extends CI_Model {
         return $this->db->affected_rows();
     }
 }
-        
- ?>
+
+?>

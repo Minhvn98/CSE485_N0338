@@ -26,28 +26,28 @@ class Lesson extends CI_Model {
         $this->db->from(self::TABLE_NAME);
         $this->db->order_by('date_upload', 'ASC');
         if ($where !== NULL) {
-            if (is_array($where)) {
-                foreach ($where as $field=>$value) {
-                    $this->db->where($field, $value);
-                }
-            } else {
-                $this->db->where(self::PRI_INDEX, $where);
+          if (is_array($where)) {
+            foreach ($where as $field=>$value) {
+                $this->db->where($field, $value);
             }
+        } else {
+            $this->db->where(self::PRI_INDEX, $where);
         }
-        $result = $this->db->get()->result_array();
-        $result = array('data_lesson' => $result);
-        return $result;
     }
+    $result = $this->db->get()->result_array();
+    $result = array('data_lesson' => $result);
+    return $result;
+}
 
 
-    public function get_id_course($id)
-    {
-        $this->db->select('id_course');
-        $this->db->from(self::TABLE_NAME);
-        $this->db->where(self::PRI_INDEX, $id);
-        $result = $this->db->get()->result_array();
-        return $result;
-    }
+public function get_id_course($id)
+{
+    $this->db->select('id_course');
+    $this->db->from(self::TABLE_NAME);
+    $this->db->where(self::PRI_INDEX, $id);
+    $result = $this->db->get()->result_array();
+    return $result;
+}
     /**
      * Inserts new data into database
      *
@@ -70,9 +70,9 @@ class Lesson extends CI_Model {
      * @return int Number of affected rows by the update query
      */
     public function update(Array $data, $where = array()) {
-            if (!is_array($where)) {
-                $where = array(self::PRI_INDEX => $where);
-            }
+        if (!is_array($where)) {
+            $where = array(self::PRI_INDEX => $where);
+        }
         $this->db->update(self::TABLE_NAME, $data, $where);
         return $this->db->affected_rows();
     }
@@ -91,5 +91,5 @@ class Lesson extends CI_Model {
         return $this->db->affected_rows();
     }
 }
-        
- ?>
+
+?>
